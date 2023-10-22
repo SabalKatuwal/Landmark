@@ -13,6 +13,7 @@
 		A67DB82D2AE1458D00C3604F /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DB82C2AE1458D00C3604F /* LandmarkRow.swift */; };
 		A67DB82F2AE147E800C3604F /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DB82E2AE147E800C3604F /* LandmarkList.swift */; };
 		A67DB8312AE1497900C3604F /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DB8302AE1497900C3604F /* LandmarkDetail.swift */; };
+		A67DB8332AE54B3900C3604F /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DB8322AE54B3900C3604F /* FavoriteButton.swift */; };
 		A6D93D312AE005470089F27F /* LandmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D93D302AE005470089F27F /* LandmarkApp.swift */; };
 		A6D93D332AE005470089F27F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D93D322AE005470089F27F /* ContentView.swift */; };
 		A6D93D352AE005480089F27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D93D342AE005480089F27F /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		A67DB82C2AE1458D00C3604F /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		A67DB82E2AE147E800C3604F /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		A67DB8302AE1497900C3604F /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		A67DB8322AE54B3900C3604F /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		A6D93D2D2AE005470089F27F /* Landmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D93D302AE005470089F27F /* LandmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkApp.swift; sourceTree = "<group>"; };
 		A6D93D322AE005470089F27F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,12 +53,9 @@
 		A63D87F92AE02B5F00B1DC91 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A6D93D402AE009CA0089F27F /* CircleImage.swift */,
-				A6D93D422AE00A7A0089F27F /* MapView.swift */,
 				A6D93D322AE005470089F27F /* ContentView.swift */,
-				A67DB82C2AE1458D00C3604F /* LandmarkRow.swift */,
-				A67DB82E2AE147E800C3604F /* LandmarkList.swift */,
-				A67DB8302AE1497900C3604F /* LandmarkDetail.swift */,
+				A67DB8352AE54E0E00C3604F /* Helper */,
+				A67DB8342AE54DFF00C3604F /* Landmarks */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -68,6 +67,26 @@
 				A67DB82A2AE1203900C3604F /* ModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A67DB8342AE54DFF00C3604F /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				A67DB82E2AE147E800C3604F /* LandmarkList.swift */,
+				A67DB82C2AE1458D00C3604F /* LandmarkRow.swift */,
+				A67DB8302AE1497900C3604F /* LandmarkDetail.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		A67DB8352AE54E0E00C3604F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A6D93D402AE009CA0089F27F /* CircleImage.swift */,
+				A6D93D422AE00A7A0089F27F /* MapView.swift */,
+				A67DB8322AE54B3900C3604F /* FavoriteButton.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		A6D93D242AE005470089F27F = {
@@ -181,6 +200,7 @@
 				A6D93D332AE005470089F27F /* ContentView.swift in Sources */,
 				A6D93D432AE00A7A0089F27F /* MapView.swift in Sources */,
 				A6D93D312AE005470089F27F /* LandmarkApp.swift in Sources */,
+				A67DB8332AE54B3900C3604F /* FavoriteButton.swift in Sources */,
 				A67DB82F2AE147E800C3604F /* LandmarkList.swift in Sources */,
 				A67DB8312AE1497900C3604F /* LandmarkDetail.swift in Sources */,
 				A6D93D412AE009CA0089F27F /* CircleImage.swift in Sources */,
