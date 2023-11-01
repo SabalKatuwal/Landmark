@@ -7,6 +7,7 @@
 
 import Foundation
 
+//This is another method. You can also use :ObservableObject after className and @Published method and later use @EnvironmentObject in other view.
 @Observable
 class ModelData {
     var landmarks: [Landmark] = load("landmarkData.json")

@@ -8,5 +8,5 @@
 import Foundation
 
 struct Hike {
-    
+    //it is aghadi ko code. will do later
 }
