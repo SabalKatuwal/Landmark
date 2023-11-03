@@ -54,8 +54,6 @@ struct BadgeSymbol: View {
                         CGPoint(x: middle - topWidth, y: topHeight + spacing),
                         CGPoint(x: middle , y: topHeight + spacing),
                         CGPoint(x: middle, y: topHeight / 2 + spacing * 3)
-                        
-                        
                     ])
                 }
                 .fill(.green)
