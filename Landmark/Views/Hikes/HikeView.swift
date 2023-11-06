@@ -26,20 +26,35 @@ struct HikeView: View {
                 Spacer()
 
                 Button {
-                    showDetail.toggle()
+                    //Both of the views affected by the showDetail property — the disclosure button and the HikeDetail view — now have animated transitions.
+                    withAnimation {
+                        showDetail.toggle()
+                    }
                 } label: {
                     Label("Graph", systemImage: "chevron.right.circle")
                         .labelStyle(.iconOnly)
                         .imageScale(.large)
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
+                        .scaleEffect(showDetail ? 1.5 : 1)
                         .padding()
+//                        .animation(.spring(), value: showDetail)
+                        
                 }
             }
 
             if showDetail {
                 HikeDetail(hike: hike)
+//                    .transition(.moveAndFade)
+                    .transition(.move(edge: .trailing))
+                
             }
         }
+    }
+}
+
+extension AnyTransition{
+    static var moveAndFade: AnyTransition{
+        AnyTransition.slide
     }
 }
 
