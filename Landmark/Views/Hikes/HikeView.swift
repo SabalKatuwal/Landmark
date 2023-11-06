@@ -44,17 +44,21 @@ struct HikeView: View {
 
             if showDetail {
                 HikeDetail(hike: hike)
-//                    .transition(.moveAndFade)
-                    .transition(.move(edge: .trailing))
+                    .transition(.moveAndFade)
+//                    .transition(.move(edge: .trailing))
                 
             }
         }
     }
 }
 
+//way of adding custom transition. Two distinct transitions will be added using the asymmetric method when it appears and disappears.
 extension AnyTransition{
     static var moveAndFade: AnyTransition{
-        AnyTransition.slide
+        .asymmetric(
+            insertion: .move(edge: .trailing).combined(with: .opacity),
+            removal: .slide.combined(with: .opacity)
+        )
     }
 }
 
