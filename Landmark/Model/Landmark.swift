@@ -18,6 +18,15 @@ struct Landmark: Hashable, Codable, Identifiable{
     var description: String
     var isFavorite: Bool
     
+    var category: Category
+    enum Category: String, CaseIterable, Codable {
+        //By matching the names in the data file (Landmark.json), you can rely on the structure’s Codable conformance to load the data.
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+    }
+    
+    
     private var imageName: String
     var image: Image {
         Image(imageName)
