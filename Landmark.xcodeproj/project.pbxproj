@@ -91,7 +91,6 @@
 			children = (
 				A6509BEA2AFBE26700B5B41F /* ProfileSummary.swift */,
 				A61E4E782AFBE6180080FBCC /* ProfileHost.swift */,
-				A61E4E7B2AFBE7480080FBCC /* HikeBadge.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -139,6 +138,7 @@
 				A6509BD32AF534AD00B5B41F /* HikeGraph.swift */,
 				A6509BDA2AF5382D00B5B41F /* HikeDetail.swift */,
 				A6509BDB2AF5382D00B5B41F /* HikeView.swift */,
+				A61E4E7B2AFBE7480080FBCC /* HikeBadge.swift */,
 			);
 			path = Hikes;
 			sourceTree = "<group>";
