@@ -14,6 +14,7 @@ struct Profile {
     var goalDate = Date()
 
 
+    // made static inorder to pass the username to previews. Eg: in ProfileEditor.swift file see preview passed as .defailt as constant
     static let `default` = Profile(username: "Sabal")
 
 
