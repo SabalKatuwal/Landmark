@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileHost: View {
     @Environment(\.editMode) var editMode
-    @Environment(ModelData.self) var modelData  //original data
+    @Environment(ModelData.self) var modelData  //data from model 
     @State private var draftprofile = Profile.default //Used to hold the changes that the user makes to the profile data before they are saved
     
     var body: some View {
