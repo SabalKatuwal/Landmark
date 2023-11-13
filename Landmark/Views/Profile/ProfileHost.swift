@@ -4,18 +4,13 @@
 //
 //  Created by Sabal on 11/8/23.
 //
-//if editMode?.wrappedValue == .active {
-//                   Button("Cancel", role: .cancel) {
-//                       draftProfile = modelData.profile
-//                       editMode?.animation().wrappedValue = .inactive
-//                   }
-//               }
+
 import SwiftUI
 
 struct ProfileHost: View {
     @Environment(\.editMode) var editMode
-    @Environment(ModelData.self) var modelData
-    @State private var draftprofile = Profile.default
+    @Environment(ModelData.self) var modelData  //original data
+    @State private var draftprofile = Profile.default //Used to hold the changes that the user makes to the profile data before they are saved
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
