@@ -33,6 +33,7 @@ struct Landmark: Hashable, Codable, Identifiable{
         Image(imageName)
     }
     
+    //featured images are used in UIkit view
     var featureImage: Image? {
         isFeatured ? Image(imageName + "_feature") : nil
     }
