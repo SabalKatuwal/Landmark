@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileEditor: View {
+    //property wrapper that is used to create a two-way binding between a parent view and its child view
     @Binding var profile: Profile
     
     //This code defines a computed property called dateRange that returns a ClosedRange of Date values. A ClosedRange is a type that represents a range of values that includes both the minimum and maximum values. In this case, the dateRange property represents the range of dates that is one year before and one year after the profile.goalDate property.
