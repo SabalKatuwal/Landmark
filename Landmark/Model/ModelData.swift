@@ -8,6 +8,8 @@
 import Foundation
 
 //This is another method. You can also use :ObservableObject after className and @Published method and later use @EnvironmentObject in other view.
+
+//@Observable macro is new in iOS 17 which is strong and makes code lesser.
 @Observable
 class ModelData {
     var landmarks: [Landmark] = load("landmarkData.json")
@@ -27,7 +29,7 @@ class ModelData {
     
 }
 
-
+//Functon to loead the JSON file
 func load<T: Decodable> (_ filename: String) -> T {
     
     let data: Data
